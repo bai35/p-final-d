@@ -1,0 +1,103 @@
+.header {
+  background-color: #2d5016;
+  color: white;
+  padding: 12px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 120px;
+}
+
+.search-form {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #FF9900;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-btn:hover {
+  background-color: #FF8800;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icon {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+.login-btn {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .search-form {
+    order: 3;
+    width: 100%;
+  }
+
+  .header-icons {
+    order: 2;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

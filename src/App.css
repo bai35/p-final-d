@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
